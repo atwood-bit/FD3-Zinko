@@ -14,16 +14,18 @@
 
     <script src="ProductsBlock.js"></script>
     <link rel="stylesheet" type="text/css" href="ProductsBlock.css">
-
+    
     <script>
 
-        var shopName='Test Shop';
+        var shopName='Apple Store';
         var products=[ 
-          {name: 'Iphone 11', code: 1, price: 1000, url: 't', count: 200}, 
-          {name: 'Iphone 11 pro', code: 2, price: 1100, url: 'q', count: 100}, 
-          {name: 'Iphone 12', code: 3, price: 1200, url: 'z', count: 480} 
+          {name: 'Iphone 11', code: 1, price: 1000, url: 'https://applecompany.pk/wp-content/uploads/2020/08/iPhone-11-128GB-2.jpg', count: 200}, 
+          {name: 'Iphone 11 pro', code: 2, price: 1100, url: 'https://on-line.by/wp-content/uploads/2020/09/iPhone-11-Pro-256GB-temno-zelenyj-eu.jpg', count: 100}, 
+          {name: 'Iphone 12', code: 3, price: 1200, url: 'https://htstatic.imgsmail.ru/pic_image/d71a1f2128730a2faf60d8d63308517f/450/450/1909765/', count: 480} ,
+          {name: 'Iphone 12 pro', code: 4, price: 1300, url: 'https://olcha.uz/image/original/products/cxnUjNkn8ht1h7KGdAkyFmam9YxbxijSDuMIQbebBDV8IM1mkeMOJEr4hcep.jpeg', count: 630} ,
+          {name: 'Iphone 11 pro max', code: 5, price: 1200, url: 'https://assets.swappie.com/iphone11promaxharmaa.jpg', count: 350} ,
+          {name: 'Iphone 12 pro max', code: 6, price: 1400, url: 'https://mobillife.of.by/images/virtuemart/product/30052907b.jpg', count: 780}
         ];
-    
         ReactDOM.render(
           React.createElement(ProductsBlock,{name:shopName,products:products}), 
           document.getElementById('container') 

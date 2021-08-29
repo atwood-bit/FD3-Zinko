@@ -7,14 +7,16 @@
     },
   
     render: function() {
-
       var products = this.props.products.map(product => 
         React.DOM.div({key:product.code,className:'Product'},
-            React.DOM.span({className:'Code'}, product.code),
-            React.DOM.div({className:'Name'},product.name),
-            React.DOM.div({className:'Count'},product.count),
-            React.DOM.div({className:'Price'},product.price),
-            React.DOM.div({className:'URL'}, product.url),
+            React.DOM.div({className:'Url'}, 
+              React.createElement('img', {className:'Image', src:product.url, alt:product.name})
+            ),
+            React.DOM.div({className:'Description'}, 
+              React.DOM.h4({className:'Name'},product.name),
+              React.DOM.p({className:'Count'},'Count: ' + product.count),
+              React.DOM.p({className:'Price'},'Price: ' + product.price + '$'),
+            ),
           )
       );
 

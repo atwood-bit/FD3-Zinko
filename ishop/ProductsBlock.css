@@ -1,36 +1,42 @@
 .ProductsBlock
 {
   margin: 0 auto;
-  border: double gray 3px;
-  width: 180px;
-  padding: 3px 7px;
+  border: double black 5px;
+  width: 400px;
+  padding: 5px;
   background-color: #F0F0F0;
 }
 
 .ProductsBlock .Name
 {
-  font-weight: bold;
+  text-align: center;
 }
 
 .ProductsBlock .Products
 {
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .ProductsBlock .Products .Product
 {
-  padding: 2px 0;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.ProductsBlock .Products .Product .Count
+.ProductsBlock .Products .Product .Description, .Url
 {
-  float: right;
-  width: 30px;
+    width: 50%;
+}
+
+.ProductsBlock .Products .Product .Url .Image
+{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.ProductsBlock .Products .Product .Count, .Price
+{
   font-weight: bold;
   text-align: right;
-}
-
-.ProductsBlock .Products .Product .Name
-{
-  margin-right: 30px;
 }
