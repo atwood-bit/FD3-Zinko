@@ -1,0 +1,4 @@
+.FilterBlock .Items{
+    display: flex;
+    flex-direction: column;
+}
