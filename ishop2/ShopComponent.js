@@ -17,7 +17,7 @@
 
     getInitialState: function() {
       return { 
-        selectedItem: null,
+        selectedProduct: null,
         productList: this.props.products,
       };
     }, 
@@ -27,7 +27,7 @@
     },
   
     itemSelected: function(code){
-      this.setState({ selectedItem: code });
+      this.setState({ selectedProduct: code });
     },
 
     deleteItem: function(product){
@@ -39,7 +39,7 @@
 
     render: function() {
       var products = this.state.productList.map(product => 
-        React.createElement(Product, {key: product.code, product, selectedItem: this.state.selectedItem,
+        React.createElement(Product, {key: product.code, product, selectedProduct: this.state.selectedProduct,
                             cbSelected: this.itemSelected, cbDelete: this.deleteItem}),
       );
 
