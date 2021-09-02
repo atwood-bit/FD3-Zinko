@@ -1,4 +1,4 @@
-.ProductsBlock
+.Shop
 {
   margin: 0 auto;
   border: double black 5px;
@@ -7,12 +7,12 @@
   background-color: #F0F0F0;
 }
 
-.ProductsBlock .Name
+.Shop .Name
 {
   text-align: center;
 }
 
-.ProductsBlock .Products
+.Shop .Products
 {
   padding-top: 10px;
 }

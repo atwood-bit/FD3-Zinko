@@ -34,7 +34,7 @@ var FilterBlock = React.createClass({
         if (this.state.isOrder){
             cloneArr = cloneArr.sort();
         }
-      var items = cloneArr.map((item, index) => {
+        var items = cloneArr.map((item, index) => {
           if (item.includes(this.state.searchString)){
             return React.DOM.span({key:index, className: 'item'}, item);
           }

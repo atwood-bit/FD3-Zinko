@@ -1,6 +1,6 @@
-﻿var ProductsBlock = React.createClass({
+﻿var Shop = React.createClass({
 
-    displayName: 'ProductsBlock',
+    displayName: 'Shop',
   
     propTypes: {
       products: React.PropTypes.arrayOf(
@@ -39,11 +39,11 @@
 
     render: function() {
       var products = this.state.productList.map(product => 
-        React.createElement(ProductItem, {key: product.code, product, selectedItem: this.state.selectedItem,
+        React.createElement(Product, {key: product.code, product, selectedItem: this.state.selectedItem,
                             cbSelected: this.itemSelected, cbDelete: this.deleteItem}),
       );
 
-      return React.DOM.div( {className:'ProductsBlock'}, 
+      return React.DOM.div( {className:'Shop'}, 
         React.DOM.h1( {className:'Name'}, this.props.name ),
         React.DOM.div( {className:'Products'}, products ),
       );
