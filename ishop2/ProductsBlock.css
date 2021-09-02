@@ -1,0 +1,18 @@
+.ProductsBlock
+{
+  margin: 0 auto;
+  border: double black 5px;
+  width: 400px;
+  padding: 5px;
+  background-color: #F0F0F0;
+}
+
+.ProductsBlock .Name
+{
+  text-align: center;
+}
+
+.ProductsBlock .Products
+{
+  padding-top: 10px;
+}

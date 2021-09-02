@@ -1,0 +1,31 @@
+.Product
+{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Product:hover{
+    cursor: pointer;
+}
+
+.Product .Description, .Url
+{
+    width: 40%;
+}
+
+.Product.SelectedProduct{
+    background-color: burlywood;
+}
+
+.Product .Count, .Price
+{
+  font-weight: bold;
+  text-align: right;
+}
+
+.Product .Url .Image
+{
+  max-width: 150px;
+  max-height: 150px;
+}
